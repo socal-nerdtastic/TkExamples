@@ -6,7 +6,7 @@ from tkinter import ttk
 
 def tick(*args):
     # var will loop over range(100) {so 0 - 99, inclusive} by default
-    if var.get() >= 99:
+    if var.get() >= 99: # could also use `prog_bar['value']`. The Variable is required for the command to be triggered, so may as well use it here too.
         prog_bar.stop()
         start_btn['text'] = "Restart"
     elif var.get() >= 65:
