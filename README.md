@@ -16,3 +16,7 @@ A Text or ScrolledText widget that will expand vertically depending on how much 
 ## sudoku_gui
 
 Draws an even grid. Mostly a demo of the undocumented "uniform" feature.
+
+## texthyperlink
+
+Demo of how to make a hyperlink in a Text widget
