@@ -4,6 +4,7 @@ from functools import partial
 import tkinter as tk
 
 class HyperlinkText(tk.Text):
+    """Add a method to the Text widget to insert a hyperlink"""
     links = 0
     def inserthyperlink(self, index, text, link):
         # currently does not support newlines in the text

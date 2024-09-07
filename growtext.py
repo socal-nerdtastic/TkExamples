@@ -3,10 +3,11 @@ import tkinter as tk
 from tkinter.scrolledtext import ScrolledText
 
 class GrowTextMixin:
-    """A Text widget that will grow or shrink vertically depending on the content"""
-    def __init__(self, parent=None, maxlines=None, **kwargs):
+    """A Text widget that will grow or shrink vertically depending on the content
+    setting the height will limit the growth"""
+    def __init__(self, parent=None, **kwargs):
         self.lines = 2
-        self.maxlines = maxlines
+        self.maxlines = kwargs.pop("height", None)
         super().__init__(parent, height=self.lines, **kwargs)
         self.bind('<<Modified>>', lambda e: self.after(50, self.on_change)) # limit updates to once every 50 ms.
     def on_change(self, event=None):
@@ -31,7 +32,7 @@ def demo():
     g.pack(fill=tk.X, expand=True)
     g.focus()
 
-    g = GrowScrolledText(width=40, maxlines=5)
+    g = GrowScrolledText(width=40, height=5)
     g.insert(tk.END, "Up to 5 lines of text allowed here.\n")
     g.insert(tk.END, "And then the scrollbar takes over.")
     g.pack(fill=tk.X, expand=True)

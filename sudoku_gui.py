@@ -1,5 +1,6 @@
 """
 A demo of the completely undocumented 'uniform' option
+This option can keep multiple rows or columns *within the same grid* at the same size
 
 draws a sudoku grid. No game play (yet), this program just makes the graphic
 """

@@ -24,3 +24,7 @@ Demo of how to make a hyperlink in a Text widget
 ## marquee
 
 A label that scrolls text left to right like a marquee.
+
+## loginwindow
+
+A demo of how to swap frames, in this case to make a password login window before showing the main application.
