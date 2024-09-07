@@ -5,8 +5,6 @@ import tkinter as tk
 
 class HyperlinkText(tk.Text):
     links = 0
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
     def inserthyperlink(self, index, text, link):
         # currently does not support newlines in the text
         tagname = f"hyperlink{self.__class__.links}"

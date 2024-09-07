@@ -20,3 +20,7 @@ Draws an even grid. Mostly a demo of the undocumented "uniform" feature.
 ## texthyperlink
 
 Demo of how to make a hyperlink in a Text widget
+
+## marquee
+
+A label that scrolls text left to right like a marquee.
