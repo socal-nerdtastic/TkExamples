@@ -1,6 +1,8 @@
 # TkExamples
 Random examples of tkinter snippets
 
+* [**Rounded corners**](rounded_corners) = A tkinter main window with rounded corners (Windows only).
+   
 ## pauseableprogressbar
 
 A demo of pausing a progressbar and changing the color.
