@@ -1,5 +1,6 @@
+#!/usr/bin/env python3
+
 # a demo of a progressbar that can be paused and reset.
-#   2020-09-23-0948-SoddingOpossum.py
 
 import tkinter as tk
 from tkinter import ttk
